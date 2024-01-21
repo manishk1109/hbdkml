@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+}
+
+.container {
+    background-image: url(images/Untitled\ design.png);
+    background-size: cover;
+    padding-block: 20vh;
+    display: flex;
+    background-color: rgba(18, 19, 20, 0.155);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-inline: 10vw;
+    gap: 50px;
+
+}
+
+.card {
+    height: 482px;
+    width: 336px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: 2s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.inside,
+.outside {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border-radius: 34px;
+}
+
+.outside {
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: #ffb8de;
+
+}
+
+.outside h1 {
+    font-family: 'WindSong', cursive;
+    color: #840032;
+    font-size: 66px;
+    margin-top: 7px;
+}
+
+.outsideimg {
+    height: 189px;
+    margin-top: 19px;
+    border-radius: 40px;
+}
+
+.blend {
+    height: 91px;
+    position: absolute;
+    bottom: 0px;
+    right: 122px;
+}
+
+.inside {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #fdfcdc;
+}
+
+.inside img {
+    margin-top: 20px;
+}
+
+.inside p {
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+
+
+.leftContent {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    width: 30vw;
+    flex-direction: column;
+
+
+
+}
+
+.flex {
+    display: flex;
+}
+
+.imageBox {
+
+    height: 160px;
+    width: 480px;
+    display: flex;
+    transform: rotateY(23deg) rotateX(346deg);
+    margin-top: 10px;
+    right: 0px;
+    justify-content: space-between;
+    gap: 10px;
+    padding-inline: 20px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+
+
+}
+
+.imageBox:hover {
+    box-shadow: 0 0 20px black;
+}
+
+.imageBox img {
+    height: 150px;
+    border-radius: 30px;
+}
+
+.Box1 {
+    background-color: #fdffb6;
+
+}
+
+.Box2 {
+    background-color: #9bf6ff;
+    z-index: 2;
+
+}
+
+.Box3 {
+    background-color: #ffecd1;
+    top: 64vh;
+    z-index: 3;
+
+}
+
+.memories {
+    background-image: url(images/SL-111019-24830-40.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.memories h1 {
+    font-size: 4rem;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.memories h1:hover {
+    text-decoration: underline;
+}
+
+.artImage {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 8vw;
+    row-gap: 50px;
+}
+
+
+.imageContainer{
+    
+    width: 350px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px solid grey;
+
+}
+
+
+    
+
+
+.imageFront img{
+    height: 380px;
+    background-color: transparent;
+   border-radius: 15px;
+   margin-top: 10px;
+   box-shadow: 0 0 10px black;
+}
+
+.imageFront img:hover{
+    height: 400px;
+}
+
+.imageBack{
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 17px;
+    box-shadow: 0 0 7px black;
+}
+
+.fix{
+    height: 320px !important;
+}
+
+
+
+
+
+
+
+@media screen and (max-width : 1200px) {
+
+    .container {
+        background-image: url(images/Untitled\ design.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-inline: 0px;
+        align-items: flex-start;
+    
+    
+    }
+
+    .card {
+        height: 510px;
+        width: 336px;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: 2s ease-in-out;
+        text-align: center;
+        cursor: pointer;
+        margin-inline: auto;
+
+    }
+
+    .imageBox {
+        height: 164px;
+        width: 98vw;
+        display: flex;
+        transform: rotateY(326deg) rotateX(20deg);
+        margin-top: 10px;
+        right: 0px;
+        justify-content: space-between;
+        gap: 10px;
+        padding-inline: 20px;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+    
+    .memories {
+        background-image: url(images/SL-111019-24830-40.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+    }
+
+    .artImage {
+        margin-top: 50px;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: 2s ease-in-out;
+        row-gap: 40px;
+        
+    }
+
+    
+
+    .imageContainer {
+       
+        width: 350px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        border-radius: 15px;
+        margin-inline: auto;
+    }
+
+
+
+    
+ 
+}
+
+@media screen and (max-width : 700px) {
+
+    .container {
+        background-image: url(images/Untitled\ design.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-inline: 0px;
+        align-items: flex-start;
+    
+    
+    }
+
+    .card {
+        height: 510px;
+        width: 336px;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: 2s ease-in-out;
+        text-align: center;
+        cursor: pointer;
+        margin-inline: auto;
+
+    }
+
+    .imageBox {
+        height: 164px;
+        width: 98vw;
+        display: flex;
+        transform: rotateY(326deg) rotateX(20deg);
+        margin-top: 10px;
+        right: 0px;
+        justify-content: space-between;
+        gap: 10px;
+        padding-inline: 20px;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+    
+    .memories {
+        background-image: url(images/SL-111019-24830-40.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+    }
+
+    .artImage {
+        margin-top: 50px;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        transition: 2s ease-in-out;
+        row-gap: 40px;
+    }
+
+   
+
+    
+    
+ 
+}
